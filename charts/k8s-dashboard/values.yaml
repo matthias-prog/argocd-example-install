@@ -105,7 +105,7 @@ resources:
 protocolHttp: false
 
 service:
-  type: ClusterIP
+  type: NodePort
   # Dashboard service port
   externalPort: 443
 
