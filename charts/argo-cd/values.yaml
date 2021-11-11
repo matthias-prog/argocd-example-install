@@ -1,11 +1,14 @@
 argo-cd:
-  installCRDs: false
+  #  installCRDs: false
   global:
-    image:
-      tag: v1.8.1
+    image: 
+      repository: cyrilix/argocd
+      tag: v2.1.6
   dex:
     enabled: false
   server:
+    ingress:
+      enabled: true
     extraArgs:
       - --insecure
     config:
